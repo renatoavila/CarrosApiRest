@@ -22,12 +22,17 @@ namespace CarrosApiRest.Business
 
         public Carro Get(Guid key)
         {
-           return  _carroRepository.Get(key) ;
+            return _carroRepository.Get(key);
         }
-
+         
         public List<Carro> List()
         {
             return _carroRepository.Get();
+        }
+
+        public List<Carro> ListForMarca(string marca)
+        {
+            return _carroRepository.GetListForMarca(marca);
         }
     }
 }

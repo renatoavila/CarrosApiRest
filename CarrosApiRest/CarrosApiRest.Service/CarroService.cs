@@ -25,6 +25,10 @@ namespace CarrosApiRest.Service
            return  _carroBusiness.Get(key);
         }
 
+        public List<Carro> ListForMarca(string marca)
+        {
+            return _carroBusiness.ListForMarca(marca);
+        }
         public List<Carro> List()
         {
             return _carroBusiness.List();

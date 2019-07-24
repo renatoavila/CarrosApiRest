@@ -10,5 +10,8 @@ namespace CarrosApiRest.Service.Interface
         void Add(Carro carro);
         List<Carro> List();
         Carro Get(Guid key);
+        List<Carro> ListForMarca(string marca);
+
+        
     }
 }

@@ -9,6 +9,9 @@ namespace CarrosApiRest.Business.Interface
     {
         void Add(Carro carro);
         List<Carro> List();
+        List<Carro> ListForMarca(string marca);
         Carro Get(Guid key);
+
+
     }
 }

@@ -55,7 +55,7 @@ namespace CarrosApiRest.Api.Controllers
             }
         }
 
-        [HttpGet("Marca/{marca}")]
+        [HttpGet("marca/{marca}")]
         public ActionResult<Carro> Get([FromRoute] string marca)
         {
             try
